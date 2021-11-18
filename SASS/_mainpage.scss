@@ -1,0 +1,34 @@
+/* ------------------------- ESTILOS BARRA ANUNCIOS-----------------------------------------------*/
+
+.container-anuncios, .container-anuncios li{
+    background-color: $bg-color;
+    padding: 0.30rem;
+    list-style: none;
+    text-align: center;
+}
+
+/*------------------------- ESTILOS LOGO LOZANIA--------------------------------------------------------*/
+
+.container-logo{
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 1rem;
+margin: 2 rem;
+background-color: $bg-color-logo;
+flex-wrap: nowrap;
+}
+
+/*-------------------------------------- ESTILOS NAVBAR---------------------------------------------*/
+
+.navbar{
+    padding: 3rem; 
+    display: flex;
+    display: inline-block;
+    list-style: none;
+    display:flex;
+    align-items: flex-end;
+    color: gray;
+    margin: 0,50rem;
+    
+}
