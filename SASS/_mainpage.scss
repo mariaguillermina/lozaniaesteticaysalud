@@ -1,3 +1,41 @@
+/*---------------- GRID---------*/
+#grilla{
+    display: grid;
+    grid-template-areas:
+    "anuncios anuncios anuncios" 
+    "header header header"
+    "section-1 section-1 section-1" 
+    "section-2 section-2 section-2"
+    "section-3 section-3 section-3"
+    "footer footer footer";
+}
+
+.container-anuncios{
+    grid-area:anuncios;
+}
+
+header{
+    grid-area: header;
+}
+
+#section-1{
+    grid-area: section-1;
+}
+
+#section-2{
+    grid-area: section-2;
+}
+
+#section-3{
+    grid-area: section-3;
+    padding-bottom: 1rem;
+}
+
+footer{
+    grid-area: footer;
+}
+
+
 /* ------------------------- ESTILOS BARRA ANUNCIOS-----------------------------------------------*/
 
 .container-anuncios, .container-anuncios li{
@@ -10,7 +48,7 @@
 /*------------------------- ESTILOS LOGO LOZANIA--------------------------------------------------------*/
 
 .container-logo{
-    display: flex;
+display: flex;
 flex-direction: row;
 align-items: flex-start;
 padding: 1rem;
@@ -28,7 +66,177 @@ flex-wrap: nowrap;
     list-style: none;
     display:flex;
     align-items: flex-end;
-    color: gray;
+    color: $font-color;
     margin: 0,50rem;
     
+}
+
+.dropdown-menu a{
+    padding: 0rem;
+    margin: 0.50rem;
+    color: $font-color;
+}
+
+
+/*------------------------------------- ESTILOS CARROUSEL---------------------------------------------*/
+
+.carousel-item{
+  justify-content: center;
+}
+
+/*Titulos y Desripcion tratamientos*/
+
+.titulos{
+    text-transform: uppercase;
+    text-align: center;
+    list-style: none;
+    padding: 1rem;
+    font-family: $font-family;
+    font-style: normal;
+    color: $font-color;
+    background-color: $bg-color-titulos;
+    margin: 2rem;
+    
+}   
+.descripcion{
+    text-align:justify;
+    list-style: none;
+    padding: 00.50rem;
+    margin: 1rem;
+    font-family: $font-family;
+    font-weight: normal;
+    font-size: large;
+    line-height: 2rem;
+    color: $font-color;
+
+}
+
+/* --------------CARDS---------- */
+
+
+.container-cards{
+    display: flex;
+    justify-content: space-around;
+    
+   
+
+}
+    
+.container-button button{
+    padding: 1rem;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 15rem;
+    border: #b9b8b8 solid;
+    border-radius: 1.5rem;
+    background-color: #ccfaec;
+    color: gray;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+}
+
+.container-button{
+    align-self: center;
+    align-items: center;
+}
+
+.container-image-card{
+    background-color: #aaf1f3;
+    border: solid;
+    color: #aaf1f3;
+}
+
+/*---------------- Estilos y transformaciones botones---------------*/
+
+button{
+    cursor: pointer;
+    text-align: center;
+    position: center; 
+
+    
+}
+
+button:hover, button:focus,.btn{
+    color: #027250;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+.nav-item a a:hover{
+    cursor: pointer;
+    color:#027250;
+}
+
+button a{
+    text-decoration: none;
+    color: gray;
+}
+button a:hover{
+    cursor: pointer;
+    color:#027250;
+}
+
+/* ---------------------------------------------------RESPONSIVE ----------------------------------------------------------------*/
+
+/*MOBILE*/
+@media (min-width: 360px) {
+    .container-cards{
+        display: flex;
+        flex-direction: column;
+        padding-left: 1rem;
+        align-items: center;
+    }
+
+}
+
+@media (min-width: 576px) { 
+    
+    .container-cards{
+        display: flex;
+        flex-direction: column;
+        padding-left: 1rem;
+        align-items: center;
+ }
+
+}
+ /*Tablet*/
+ @media (min-width: 768px) {
+     .container-cards{
+         display: flex;
+         flex: row;
+         align-items: space-around;
+     }
+     .container-texto-section h2,h4{
+         text-align: center;
+     }
+     
+  }
+
+/*Desktop*/
+
+@media (min-width: 1200px){
+
+.container-cards{
+    display: flex;
+    flex-direction: row;
+    align-items: space-around;   
+
+}
+
+.navbar-toggler-icon{
+    display: none;
+}
 }

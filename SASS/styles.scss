@@ -1,8 +1,16 @@
 
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
 $bg-gradient:linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
 $bg-color: #aaf1f3;
 $font-family:'Ubuntu', sans-serif;
 $bg-color-logo:aliceblue;
+$font-color: grey;
+$bg-color-titulos: #a6d1db;
 
 
 body{
