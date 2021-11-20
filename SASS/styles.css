@@ -80,7 +80,7 @@ footer {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 1rem;
+  padding: 2rem;
   margin: 2 rem;
   background-color: aliceblue;
   -ms-flex-wrap: nowrap;
@@ -89,18 +89,24 @@ footer {
 
 /*-------------------------------------- ESTILOS NAVBAR---------------------------------------------*/
 .navbar {
-  padding: 3rem;
+  padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  display: inline-block;
-  list-style: none;
   display: flex;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  color: grey;
-  margin: 0,50rem;
+}
+
+.navbar li {
+  display: inline-block;
+}
+
+.navbar a {
+  text-transform: uppercase;
+  font-color: grey;
+  font-font-family: "Ubuntu", sans-serif;
+  font-width: bold;
 }
 
 .dropdown-menu a {
@@ -148,6 +154,9 @@ footer {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .container-button button {

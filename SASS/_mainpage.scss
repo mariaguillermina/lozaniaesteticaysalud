@@ -8,6 +8,7 @@
     "section-2 section-2 section-2"
     "section-3 section-3 section-3"
     "footer footer footer";
+    
 }
 
 .container-anuncios{
@@ -51,30 +52,43 @@ footer{
 display: flex;
 flex-direction: row;
 align-items: flex-start;
-padding: 1rem;
+padding: 2rem;
 margin: 2 rem;
 background-color: $bg-color-logo;
 flex-wrap: nowrap;
+
 }
 
 /*-------------------------------------- ESTILOS NAVBAR---------------------------------------------*/
 
 .navbar{
-    padding: 3rem; 
+    padding: 2rem;
     display: flex;
-    display: inline-block;
-    list-style: none;
-    display:flex;
     align-items: flex-end;
-    color: $font-color;
-    margin: 0,50rem;
+    li{
+        display:inline-block 
+    }
+    a{
+        text: {
+            transform: uppercase;
     
+        }
+        font: {
+            color: $font-color ;
+            font-family: $font-family;
+            width: bold;
+        }
+    }
 }
 
-.dropdown-menu a{
+
+.dropdown-menu{
+
+ a{
     padding: 0rem;
     margin: 0.50rem;
     color: $font-color;
+}
 }
 
 
@@ -117,6 +131,7 @@ flex-wrap: nowrap;
 .container-cards{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     
    
 
