@@ -10,56 +10,6 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
-/*---------------- GRID---------*/
-#grilla {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "anuncios anuncios anuncios"  "header header header" "section-1 section-1 section-1"  "section-2 section-2 section-2" "section-3 section-3 section-3" "footer footer footer";
-}
-
-.container-anuncios {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: anuncios;
-}
-
-header {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: header;
-}
-
-#section-1 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: section-1;
-}
-
-#section-2 {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: section-2;
-}
-
-#section-3 {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: section-3;
-  padding-bottom: 1rem;
-}
-
-footer {
-  -ms-grid-row: 6;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: footer;
-}
-
 /* ------------------------- ESTILOS BARRA ANUNCIOS-----------------------------------------------*/
 .container-anuncios, .container-anuncios li {
   background-color: #aaf1f3;
@@ -159,6 +109,10 @@ footer {
           align-items: center;
 }
 
+.container-cards .container-card {
+  margin: 0.25rem;
+}
+
 .container-button button {
   padding: 1rem;
   margin: auto;
@@ -232,6 +186,40 @@ button a:hover {
   color: #027250;
 }
 
+/*---------------------------------------ESTILOS FOOTER---------------------------------------------------------------------------*/
+footer {
+  background-color: #a6dbdd;
+}
+
+footer li {
+  list-style: none;
+  cursor: pointer;
+}
+
+footer li :hover {
+  color: #027250;
+}
+
+footer a, footer h6 {
+  text-decoration: none;
+  color: grey;
+  font-family: "Ubuntu", sans-serif;
+  width: bold;
+}
+
+.container-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem;
+  padding: 2.50rem;
+}
+
 /* ---------------------------------------------------RESPONSIVE ----------------------------------------------------------------*/
 /*MOBILE*/
 @media (min-width: 360px) {
@@ -248,6 +236,20 @@ button a:hover {
         -ms-flex-align: center;
             align-items: center;
   }
+  .container-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
 }
 
 @media (min-width: 576px) {
@@ -263,6 +265,20 @@ button a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .container-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
   }
 }
 
@@ -282,10 +298,22 @@ button a:hover {
   .container-texto-section h2, h4 {
     text-align: center;
   }
+  .container-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 1rem;
+    padding: 2.50rem;
+  }
 }
 
 /*Desktop*/
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .container-cards {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -300,6 +328,22 @@ button a:hover {
   }
   .navbar-toggler-icon {
     display: none;
+  }
+  .container-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 1rem;
+    padding: 2.50rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
