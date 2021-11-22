@@ -45,11 +45,15 @@ margin: 1rem;
     display: flex;
     justify-content: center;
     margin: 2rem;
+    .boton-limpieza{
+        background-color: rgb(111, 236, 174);
+        border-radius: 1rem;
+        border-color: grey;
+    }
     
-    .btn{
+    .btn-limpieza{
         color: $font-color;
         text-transform: uppercase;
-        
     }
 }
 

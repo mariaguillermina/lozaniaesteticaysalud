@@ -371,7 +371,7 @@ h2 {
 }
 
 /*-------------------------------------------BOTONES---------------------------------------------------------------------*/
-.btn {
+.btn-contacto {
   color: #cbe8e5;
   margin: 0.80rem;
 }
@@ -547,7 +547,13 @@ h2 {
   margin: 2rem;
 }
 
-.container-button-limpieza .btn {
+.container-button-limpieza .boton-limpieza {
+  background-color: #6fecae;
+  border-radius: 1rem;
+  border-color: grey;
+}
+
+.container-button-limpieza .btn-limpieza {
   color: grey;
   text-transform: uppercase;
 }
