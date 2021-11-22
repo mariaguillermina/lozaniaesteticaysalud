@@ -375,6 +375,8 @@ h2 {
 .btn-contacto {
   color: #cbe8e5;
   margin: 0.80rem;
+  border-color: gray solid;
+  padding: 1rem;
 }
 
 /*-----------------------------------BG image Responsive---------------------------------------------------------------------*/
