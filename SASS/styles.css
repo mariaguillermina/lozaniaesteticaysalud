@@ -7,8 +7,8 @@
 
 body {
   background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-  font-family: "Ubuntu", sans-serif;
-  color: grey;
+  font-family: "M PLUS 2", sans-serif;
+  color: #3a3939;
 }
 
 /* ------------------------- ESTILOS BARRA ANUNCIOS-----------------------------------------------*/
@@ -55,15 +55,15 @@ body {
 
 .navbar a {
   text-transform: uppercase;
-  font-color: grey;
-  font-font-family: "Ubuntu", sans-serif;
+  font-color: #3a3939;
+  font-font-family: "M PLUS 2", sans-serif;
   font-width: bold;
 }
 
 .dropdown-menu a {
   padding: 0rem;
   margin: 0.50rem;
-  color: grey;
+  color: #3a3939;
 }
 
 /*------------------------------------- ESTILOS CARROUSEL---------------------------------------------*/
@@ -77,12 +77,13 @@ body {
 .titulos {
   text-transform: uppercase;
   font-size: x-large;
+  font-weight: 1000;
   text-align: center;
   list-style: none;
   padding: 1rem;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "M PLUS 2", sans-serif;
   font-style: normal;
-  color: grey;
+  color: #3a3939;
   background-color: #a6d1db;
   margin: 2rem;
 }
@@ -92,11 +93,11 @@ body {
   list-style: none;
   padding: 00.50rem;
   margin: 1rem;
-  font-family: "Ubuntu", sans-serif;
-  font-weight: normal;
+  font-family: "M PLUS 2", sans-serif;
+  font-weight: 550;
   font-size: large;
   line-height: 2rem;
-  color: grey;
+  color: #3a3939;
 }
 
 /* --------------CARDS---------- */
@@ -124,13 +125,13 @@ body {
   border: #b9b8b8 solid;
   border-radius: 1.5rem;
   background-color: #ccfaec;
-  color: gray;
+  color: #3a3939;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   text-transform: uppercase;
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 400;
+  font-family: "M PLUS 2", sans-serif;
+  font-weight: 600;
   font-size: medium;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -164,9 +165,9 @@ button {
 }
 
 button:hover, button:focus, .btn {
-  color: grey;
+  color: #3a3939;
   color: #027250;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "M PLUS 2", sans-serif;
 }
 
 button:hover {
@@ -190,7 +191,7 @@ button a:hover {
 }
 
 form .btn {
-  color: grey;
+  color: #3a3939;
 }
 
 /*---------------------------------------ESTILOS FOOTER---------------------------------------------------------------------------*/
@@ -209,8 +210,8 @@ footer li :hover {
 
 footer a, footer h6 {
   text-decoration: none;
-  color: grey;
-  font-family: "Ubuntu", sans-serif;
+  color: #3a3939;
+  font-family: "M PLUS 2", sans-serif;
   width: bold;
 }
 
@@ -367,7 +368,7 @@ h2 {
 }
 
 .form-select option {
-  color: grey;
+  color: #3a3939;
 }
 
 /*-------------------------------------------BOTONES---------------------------------------------------------------------*/
@@ -554,7 +555,7 @@ h2 {
 }
 
 .container-button-limpieza .btn-limpieza {
-  color: grey;
+  color: #3a3939;
   text-transform: uppercase;
 }
 
