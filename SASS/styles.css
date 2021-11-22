@@ -691,4 +691,208 @@ h2 {
     padding: 1rem;
   }
 }
+
+/*------------------------------STYLE BG BANNER-----------------------------------------------*/
+.container-header-presoterapia {
+  background-image: url("./img/bg-presoterapia.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20rem;
+}
+
+/* ---------------------------------------- style Main----------------------------------------*/
+.container-section-2-presoterapia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.container-section-2-presoterapia .container-image-1, .container-section-2-presoterapia .container-image-2 {
+  margin: 2rem;
+}
+
+.container-section-2-presoterapia .container-image-1 .image, .container-section-2-presoterapia .container-image-2 .image {
+  border: #979696 solid;
+}
+
+.container-section-1-presoterapia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  text-align: justify;
+  margin: 1rem;
+}
+
+.container-section-1-presoterapia h1 {
+  font-size: x-large;
+  border: gray solid;
+  background-color: #aaf1f3;
+  padding: 1rem;
+}
+
+/*---------------------------------------STYLE BOTON--------------------------------------*/
+.container-button-presoterapia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2rem;
+}
+
+.container-button-presoterapia .boton-presoterapia {
+  background-color: #c3e6d4;
+  border-radius: 1rem;
+  border-color: grey;
+}
+
+.container-button-presoterapia .btn-presoterapia {
+  color: #3a3939;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/*---------------------------------RESPONSIVE---------------------------------------------------*/
+/*------------MOBILE---------------------*/
+@media (min-width: 360px) {
+  .container-header-presoterapia {
+    background-image: url("./img/bg-presoterapia-mobile.jpg");
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .container-section-2-presoterapia {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .container-section-2-presoterapia .container-image-1, .container-section-2-presoterapia .container-image-2 {
+    margin: 2rem;
+  }
+  .container-section-2-presoterapia .container-image-1 .image, .container-section-2-presoterapia .container-image-2 .image {
+    border: #979696 solid;
+    height: 20rem;
+    width: 20rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .container-header-presoterapia {
+    background-image: url("./img/bg-presoterapia-mobile.jpg");
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .container-section-2-presoterapia {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .container-section-2-presoterapia .container-image-1, .container-section-2-presoterapia .container-image-2 {
+    margin: 2rem;
+  }
+  .container-section-2-presoterapia .container-image-1 .image, .container-section-2-presoterapia .container-image-2 .image {
+    border: #979696 solid;
+    height: 20rem;
+    width: 20rem;
+  }
+}
+
+/*-----------TABLET---------------------*/
+@media (min-width: 768px) {
+  .container-header-presoterapia {
+    background-image: url("./img/bg-presoterapia.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+/*-----------DESKTOP--------------------*/
+@media (min-width: 992px) {
+  .container-header-presoterapia {
+    background-image: url("./img/bg-presoterapia.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: unset;
+    height: 35rem;
+  }
+  .container-section-2-presoterapia {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .container-section-2-presoterapia .container-image-1, .container-section-2-presoterapia .container-image-2 {
+    margin: 2rem;
+  }
+  .container-section-2-presoterapia .container-image-1 .image, .container-section-2-presoterapia .container-image-2 .image {
+    border: #979696 solid;
+  }
+  .container-section-1-presoterapia {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    text-align: justify;
+    margin: 1rem;
+  }
+  .container-section-1-presoterapia h1 {
+    font-size: x-large;
+    border: gray solid;
+    background-color: #aaf1f3;
+    padding: 1rem;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
