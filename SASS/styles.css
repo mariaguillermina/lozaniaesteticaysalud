@@ -557,6 +557,7 @@ h2 {
 .container-button-limpieza .btn-limpieza {
   color: #3a3939;
   text-transform: uppercase;
+  font-weight: 600;
 }
 
 /*---------------------------------RESPONSIVE---------------------------------------------------*/
