@@ -381,13 +381,13 @@ h2 {
 /*------------MOBILE---------------------*/
 @media (min-width: 360px) {
   .header-contacto {
-    background-image: url("/SASS/img/bg-mobile.jpg");
+    background-image: url("./SASS/img/bg-mobile.jpg");
   }
 }
 
 @media (min-width: 576px) {
   .header-contacto {
-    background-image: url("/SASS/img/bg-mobile.jpg");
+    background-image: url("./SASS/img/bg-mobile.jpg");
   }
 }
 
