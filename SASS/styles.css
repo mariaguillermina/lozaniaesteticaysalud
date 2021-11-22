@@ -8,6 +8,7 @@
 body {
   background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
   font-family: "Ubuntu", sans-serif;
+  color: grey;
 }
 
 /* ------------------------- ESTILOS BARRA ANUNCIOS-----------------------------------------------*/
@@ -75,6 +76,7 @@ body {
 /*Titulos y Desripcion tratamientos*/
 .titulos {
   text-transform: uppercase;
+  font-size: x-large;
   text-align: center;
   list-style: none;
   padding: 1rem;
@@ -162,8 +164,9 @@ button {
 }
 
 button:hover, button:focus, .btn {
+  color: grey;
   color: #027250;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 button:hover {
@@ -184,6 +187,10 @@ button a {
 button a:hover {
   cursor: pointer;
   color: #027250;
+}
+
+form .btn {
+  color: grey;
 }
 
 /*---------------------------------------ESTILOS FOOTER---------------------------------------------------------------------------*/
@@ -344,6 +351,334 @@ footer a, footer h6 {
             align-items: center;
     margin: 1rem;
     padding: 2.50rem;
+  }
+}
+
+/*---------------------------------------HEADER---------------------------------------------------------*/
+.header-contacto {
+  background-image: url("./img/lozaniavarios-banner.jpg");
+  padding: 10rem;
+  background-repeat: no-repeat;
+}
+
+/*-------------------------------------------------------TEXTO-------------------------------------------------------*/
+h2 {
+  font-size: larger;
+}
+
+.form-select option {
+  color: grey;
+}
+
+/*-------------------------------------------BOTONES---------------------------------------------------------------------*/
+.btn {
+  color: #cbe8e5;
+  margin: 0.80rem;
+}
+
+/*-----------------------------------BG image Responsive---------------------------------------------------------------------*/
+/*------------MOBILE---------------------*/
+@media (min-width: 360px) {
+  .header-contacto {
+    background-image: url("/SASS/img/bg-mobile.jpg");
+  }
+}
+
+@media (min-width: 576px) {
+  .header-contacto {
+    background-image: url("/SASS/img/bg-mobile.jpg");
+  }
+}
+
+/*-----------TABLET---------------------*/
+@media (min-width: 768px) {
+  .header-contacto {
+    background-image: url("./img/lozaniavarios-banner.jpg");
+  }
+}
+
+/*-----------DESKTOP--------------------*/
+@media (min-width: 992px) {
+  .header-contacto {
+    background-image: url("./img/lozaniavarios-banner.jpg");
+    padding: 10rem;
+    background-repeat: no-repeat;
+  }
+}
+
+/*-------------------BG IMAGE HEADER------------------------------------------------*/
+.container-header-cursos {
+  background-image: url("./img/bg-pilates-cursos.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30rem;
+}
+
+/*---------------------------STYLE TEXTO-----------------------------------------------*/
+.container-titulo, .container-completa {
+  margin: 2rem;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: row;
+      -ms-flex: row;
+          flex: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container-horario, .container-precio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3rem;
+  padding: 1rem;
+  background-color: #aaf1f3;
+  font-size: large;
+}
+
+/*---------------------------------------------STYLE FORM--------------------------------------------------------------------*/
+.form-label {
+  font-size: larger;
+  margin: 1rem;
+}
+
+/*-----------------------------------BG image Responsive---------------------------------------------------------------------*/
+/*------------MOBILE---------------------*/
+@media (min-width: 360px) {
+  .container-header-cursos {
+    background-image: url("./img/clasesgrupales1.jpg");
+  }
+}
+
+@media (min-width: 576px) {
+  .container-header-cursos {
+    background-image: url("./img/clasesgrupales1.jpg");
+  }
+}
+
+/*-----------TABLET---------------------*/
+@media (min-width: 768px) {
+  .container-header-cursos {
+    background-image: url("./img/bg-pilates-cursos -mobile.jpg");
+  }
+}
+
+/*-----------DESKTOP--------------------*/
+@media (min-width: 992px) {
+  .container-header-cursos {
+    background-image: url("./img/bg-pilates-cursos.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30rem;
+  }
+}
+
+/*------------------------------STYLE BG BANNER-----------------------------------------------*/
+.container-header-limpieza {
+  background-image: url("./img/limpiezacarrousel3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 35rem;
+}
+
+/* ---------------------------------------- style Main----------------------------------------*/
+.container-section-2-limpieza {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.container-section-2-limpieza .container-image-1, .container-section-2-limpieza .container-image-2 {
+  margin: 2rem;
+}
+
+.container-section-2-limpieza .container-image-1 .image, .container-section-2-limpieza .container-image-2 .image {
+  border: #979696 solid;
+}
+
+.container-section-1-limpieza {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  text-align: justify;
+  margin: 1rem;
+}
+
+.container-section-1-limpieza h1 {
+  font-size: x-large;
+  border: gray solid;
+  background-color: #aaf1f3;
+  padding: 1rem;
+}
+
+/*---------------------------------------STYLE BOTON--------------------------------------*/
+.container-button-limpieza {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2rem;
+}
+
+.container-button-limpieza .btn {
+  color: grey;
+  text-transform: uppercase;
+}
+
+/*---------------------------------RESPONSIVE---------------------------------------------------*/
+/*------------MOBILE---------------------*/
+@media (min-width: 360px) {
+  .container-header-limpieza {
+    background-image: url("./img/limpieza facial card real.jpg");
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .container-section-2-limpieza {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .container-section-2-limpieza .container-image-1, .container-section-2-limpieza .container-image-2 {
+    margin: 2rem;
+  }
+  .container-section-2-limpieza .container-image-1 .image, .container-section-2-limpieza .container-image-2 .image {
+    border: #979696 solid;
+    height: 20rem;
+    width: 20rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .container-header-limpieza {
+    background-image: url("./img/limpieza facial card real.jpg");
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .container-section-2-limpieza {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .container-section-2-limpieza .container-image-1, .container-section-2-limpieza .container-image-2 {
+    margin: 2rem;
+  }
+  .container-section-2-limpieza .container-image-1 .image, .container-section-2-limpieza .container-image-2 .image {
+    border: #979696 solid;
+    height: 20rem;
+    width: 20rem;
+  }
+}
+
+/*-----------TABLET---------------------*/
+@media (min-width: 768px) {
+  .container-header-limpieza {
+    background-image: url("./img/limpieza facial card real.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+/*-----------DESKTOP--------------------*/
+@media (min-width: 992px) {
+  .container-header-limpieza {
+    background-image: url("./img/limpiezacarrousel3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35rem;
+  }
+  .container-section-2-limpieza {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .container-section-2-limpieza .container-image-1, .container-section-2-limpieza .container-image-2 {
+    margin: 2rem;
+  }
+  .container-section-2-limpieza .container-image-1 .image, .container-section-2-limpieza .container-image-2 .image {
+    border: #979696 solid;
+  }
+  .container-section-1-limpieza {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    text-align: justify;
+    margin: 1rem;
+  }
+  .container-section-1-limpieza h1 {
+    font-size: x-large;
+    border: gray solid;
+    background-color: #aaf1f3;
+    padding: 1rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

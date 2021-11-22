@@ -18,10 +18,15 @@ $color-hover: #027250;
 body{
     background-image: $bg-gradient;
     font-family: $font-family;
+    color: $font-color
 
 }
 
 @import"mainpage";
+@import"contacto";
+@import"cursos";
+@import"limpieza";
+
 
 
 

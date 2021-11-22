@@ -1,0 +1,71 @@
+
+/*-------------------BG IMAGE HEADER------------------------------------------------*/
+.container-header-cursos{
+    background-image: url("./img/bg-pilates-cursos.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30rem;
+}
+
+/*---------------------------STYLE TEXTO-----------------------------------------------*/
+.container-titulo, .container-completa{
+    margin: 2rem;
+    padding: 1rem;
+    display: flex;
+    flex: row;
+    justify-content: center;
+}
+
+.container-horario,.container-precio{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+    padding: 1rem;
+    background-color: $bg-color;
+    font-size: large;
+    
+}
+
+/*---------------------------------------------STYLE FORM--------------------------------------------------------------------*/
+.form-label{
+    font-size: larger;
+    margin: 1rem;
+}
+
+/*-----------------------------------BG image Responsive---------------------------------------------------------------------*/
+
+/*------------MOBILE---------------------*/
+
+@media (min-width: 360px){
+    .container-header-cursos{
+        background-image: url("./img/clasesgrupales1.jpg");
+
+    }
+
+}
+
+@media (min-width: 576px){
+    .container-header-cursos{
+        background-image: url("./img/clasesgrupales1.jpg");
+    }
+}
+
+/*-----------TABLET---------------------*/
+@media (min-width: 768px){
+    .container-header-cursos{
+        background-image: url("./img/bg-pilates-cursos\ -mobile.jpg");
+    }
+}
+
+/*-----------DESKTOP--------------------*/
+
+@media (min-width: 992px){
+    .container-header-cursos{
+        background-image: url("./img/bg-pilates-cursos.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 30rem;
+    }
+}

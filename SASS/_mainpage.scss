@@ -65,6 +65,7 @@ flex-wrap: nowrap;
 
 .titulos{
     text-transform: uppercase;
+    font-size: x-large;
     text-align: center;
     list-style: none;
     padding: 1rem;
@@ -147,8 +148,9 @@ button{
 }
 
 button:hover, button:focus,.btn{
+    color: $font-color;
     color: $color-hover;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: $font-family;
 
 }
 
@@ -169,6 +171,11 @@ button a:hover{
     cursor: pointer;
     color: $color-hover;
 }
+form {
+    .btn{
+        color: $font-color;
+} 
+}  
 
 /*---------------------------------------ESTILOS FOOTER---------------------------------------------------------------------------*/
 footer{

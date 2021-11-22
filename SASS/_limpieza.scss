@@ -1,0 +1,163 @@
+
+
+/*------------------------------STYLE BG BANNER-----------------------------------------------*/
+
+.container-header-limpieza{
+    background-image: url("./img/limpiezacarrousel3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35rem;
+}
+
+/* ---------------------------------------- style Main----------------------------------------*/
+.container-section-2-limpieza{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+    .container-image-1, .container-image-2{
+        margin: 2rem;
+        .image{
+            border: rgb(151, 150, 150) solid;
+        }
+    }
+}
+
+.container-section-1-limpieza{
+    h1{
+    font-size: x-large;
+    border: gray solid;
+    background-color: $bg-color;
+    padding: 1rem;
+
+}
+display: flex;
+justify-content: end;
+text-align: justify;
+margin: 1rem;
+
+}
+
+/*---------------------------------------STYLE BOTON--------------------------------------*/
+
+.container-button-limpieza{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    
+    .btn{
+        color: $font-color;
+        text-transform: uppercase;
+        
+    }
+}
+
+/*---------------------------------RESPONSIVE---------------------------------------------------*/
+
+/*------------MOBILE---------------------*/
+
+@media (min-width: 360px){
+    .container-header-limpieza{
+        background-image: url("./img/limpieza\ facial\ card\ real.jpg");
+        justify-content: center;
+        background-repeat:no-repeat;
+        background-position: center;
+        
+        
+
+    }
+    .container-section-2-limpieza{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 1rem;
+        padding: 1rem;
+        .container-image-1, .container-image-2{
+            margin: 2rem;
+            .image{
+                border: rgb(151, 150, 150) solid;
+                height: 20rem;
+                width: 20rem;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 576px){
+    .container-header-limpieza{
+        background-image: url("./img/limpieza\ facial\ card\ real.jpg");
+        justify-content: center;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .container-section-2-limpieza{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 1rem;
+        padding: 1rem;
+        .container-image-1, .container-image-2{
+            margin: 2rem;
+            .image{
+                border: rgb(151, 150, 150) solid;
+                height: 20rem;
+                width: 20rem;
+            }
+        }
+    }
+}
+
+/*-----------TABLET---------------------*/
+@media (min-width: 768px){
+    .container-header-limpieza{
+        background-image: url("./img/limpieza\ facial\ card\ real.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+/*-----------DESKTOP--------------------*/
+
+@media (min-width: 992px){
+    .container-header-limpieza{
+        background-image: url("./img/limpiezacarrousel3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 35rem;
+    
+    }
+
+    .container-section-2-limpieza{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+        padding: 1rem;
+        .container-image-1, .container-image-2{
+            margin: 2rem;
+            .image{
+                border: rgb(151, 150, 150) solid;
+            }
+        }
+    }
+    
+    .container-section-1-limpieza{
+        h1{
+        font-size: x-large;
+        border: gray solid;
+        background-color: $bg-color;
+        padding: 1rem;
+    
+    }
+    display: flex;
+    justify-content: end;
+    text-align: justify;
+    margin: 1rem;
+    
+    }
+}

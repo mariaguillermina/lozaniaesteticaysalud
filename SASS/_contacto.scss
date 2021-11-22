@@ -1,0 +1,62 @@
+/*---------------------------------------HEADER---------------------------------------------------------*/
+.header-contacto{
+    background-image: url("./img/lozaniavarios-banner.jpg");
+    padding: 10rem;
+    background-repeat: no-repeat;
+
+}
+
+/*-------------------------------------------------------TEXTO-------------------------------------------------------*/
+h2{
+    font-size: larger;
+}
+
+.form-select{
+    option{
+        color: $font-color;
+    }
+}
+
+
+/*-------------------------------------------BOTONES---------------------------------------------------------------------*/
+.btn{
+    color: rgb(203, 232, 229);
+    margin: 0.80rem;  
+}
+    
+/*-----------------------------------BG image Responsive---------------------------------------------------------------------*/
+
+/*------------MOBILE---------------------*/
+
+@media (min-width: 360px){
+    .header-contacto{
+        background-image: url("/SASS/img/bg-mobile.jpg");
+
+    }
+
+}
+
+@media (min-width: 576px){
+    .header-contacto{
+        background-image: url("/SASS/img/bg-mobile.jpg");
+    }
+}
+
+/*-----------TABLET---------------------*/
+@media (min-width: 768px){
+    .header-contacto{
+        background-image: url("./img/lozaniavarios-banner.jpg");
+    }
+}
+
+/*-----------DESKTOP--------------------*/
+
+@media (min-width: 992px){
+    .header-contacto{
+        background-image: url("./img/lozaniavarios-banner.jpg");
+        padding: 10rem;
+        background-repeat: no-repeat;
+    
+    }
+
+}
