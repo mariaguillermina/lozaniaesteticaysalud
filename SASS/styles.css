@@ -2119,4 +2119,208 @@ h2 {
     padding: 1rem;
   }
 }
+
+/*------------------------------STYLE BG BANNER-----------------------------------------------*/
+.container-header-pilatescolumna {
+  background-image: url("./img/bg-pilatescolumna.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20rem;
+}
+
+/* ---------------------------------------- style Main----------------------------------------*/
+.container-section-2-pilatescolumna {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.container-section-2-pilatescolumna .container-image-1, .container-section-2-pilatescolumna .container-image-2 {
+  margin: 2rem;
+}
+
+.container-section-2-pilatescolumna .container-image-1 .image, .container-section-2-pilatescolumna .container-image-2 .image {
+  border: #979696 solid;
+}
+
+.container-section-1-pilatescolumna {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  text-align: justify;
+  margin: 1rem;
+}
+
+.container-section-1-pilatescolumna h1 {
+  font-size: x-large;
+  border: gray solid;
+  background-color: #aaf1f3;
+  padding: 1rem;
+}
+
+/*---------------------------------------STYLE BOTON--------------------------------------*/
+.container-button-pilatescolumna {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2rem;
+}
+
+.container-button-pilatescolumna .boton-pilatescolumna {
+  background-color: #c3e6d4;
+  border-radius: 1rem;
+  border-color: grey;
+}
+
+.container-button-pilatescolumna .btn-pilatescolumna {
+  color: #3a3939;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/*---------------------------------RESPONSIVE---------------------------------------------------*/
+/*------------MOBILE---------------------*/
+@media (min-width: 360px) {
+  .container-header-pilatescolumna {
+    background-image: url("./img/bg-pilatescolumna-mobile.jpg");
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .container-section-2-pilatescolumna {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .container-section-2-pilatescolumna .container-image-1, .container-section-2-pilatescolumna .container-image-2 {
+    margin: 2rem;
+  }
+  .container-section-2-pilatescolumna .container-image-1 .image, .container-section-2-pilatescolumna .container-image-2 .image {
+    border: #979696 solid;
+    height: 20rem;
+    width: 20rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .container-header-pilatescolumna {
+    background-image: url("./img/bg-pilatescolumna-mobile.jpg");
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .container-section-2-pilatescolumna {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .container-section-2-pilatescolumna .container-image-1, .container-section-2-pilatescolumna .container-image-2 {
+    margin: 2rem;
+  }
+  .container-section-2-pilatescolumna .container-image-1 .image, .container-section-2-pilatescolumna .container-image-2 .image {
+    border: #979696 solid;
+    height: 20rem;
+    width: 20rem;
+  }
+}
+
+/*-----------TABLET---------------------*/
+@media (min-width: 768px) {
+  .container-header-pilatescolumna {
+    background-image: url("./img/bg-pilatescolumna.png");
+    background-repeat: no-repeat;
+    background-position: inherit;
+  }
+}
+
+/*-----------DESKTOP--------------------*/
+@media (min-width: 992px) {
+  .container-header-pilatescolumna {
+    background-image: url("./img/bg-pilatescolumna.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 28rem;
+  }
+  .container-section-2-pilatescolumna {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .container-section-2-pilatescolumna .container-image-1, .container-section-2-pilatescolumna .container-image-2 {
+    margin: 2rem;
+  }
+  .container-section-2-pilatescolumna .container-image-1 .image, .container-section-2-pilatescolumna .container-image-2 .image {
+    border: #979696 solid;
+  }
+  .container-section-1-pilatescolumna {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    text-align: justify;
+    margin: 1rem;
+  }
+  .container-section-1-pilatescolumna h1 {
+    font-size: x-large;
+    border: gray solid;
+    background-color: #aaf1f3;
+    padding: 1rem;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
