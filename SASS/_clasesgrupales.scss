@@ -1,0 +1,169 @@
+
+
+/*------------------------------STYLE BG BANNER-----------------------------------------------*/
+
+.container-header-clasesgrupales{
+    background-image: url("./img/bg-clasegrupal.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20rem;
+}
+
+/* ---------------------------------------- style Main----------------------------------------*/
+.container-section-2-clasesgrupales{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+    .container-image-1, .container-image-2{
+        margin: 2rem;
+        .image{
+            border: rgb(151, 150, 150) solid;
+        }
+    }
+}
+
+.container-section-1-clasesgrupales{
+    h1{
+    font-size: x-large;
+    border: gray solid;
+    background-color: $bg-color;
+    padding: 1rem;
+
+}
+display: flex;
+justify-content: end;
+text-align: justify;
+margin: 1rem;
+
+}
+
+/*---------------------------------------STYLE BOTON--------------------------------------*/
+
+.container-button-clasesgrupales{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    .boton-clasesgrupales{
+        background-color: rgb(195, 230, 212);
+        border-radius: 1rem;
+        border-color: grey;
+    }
+    
+    .btn-clasesgrupales{
+        color: $font-color;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+}
+
+/*---------------------------------RESPONSIVE---------------------------------------------------*/
+
+/*------------MOBILE---------------------*/
+
+@media (min-width: 360px){
+    .container-header-clasesgrupales{
+        background-image: url("./img/bg-clasegrupal-mobile.jpg");
+        justify-content: center;
+        background-repeat:no-repeat;
+        background-position: center;
+        
+        
+
+    }
+    .container-section-2-clasesgrupales{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 1rem;
+        padding: 1rem;
+        .container-image-1, .container-image-2{
+            margin: 2rem;
+            .image{
+                border: rgb(151, 150, 150) solid;
+                height: 20rem;
+                width: 20rem;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 576px){
+    .container-header-clasesgrupales{
+        background-image: url("./img/bg-clasegrupal-mobile.jpg");
+        justify-content: center;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .container-section-2-clasesgrupales{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 1rem;
+        padding: 1rem;
+        .container-image-1, .container-image-2{
+            margin: 2rem;
+            .image{
+                border: rgb(151, 150, 150) solid;
+                height: 20rem;
+                width: 20rem;
+            }
+        }
+    }
+}
+
+/*-----------TABLET---------------------*/
+@media (min-width: 768px){
+    .container-header-clasesgrupales{
+        background-image: url("./img/bg-clasegrupal.jpg");
+        background-repeat: no-repeat;
+        background-position: inherit;
+    }
+}
+
+/*-----------DESKTOP--------------------*/
+
+@media (min-width: 992px){
+    .container-header-clasesgrupales{
+        background-image: url("./img/bg-clasegrupal.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: inherit;
+        height: 35rem;
+    
+    }
+
+    .container-section-2-clasesgrupales{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+        padding: 1rem;
+        .container-image-1, .container-image-2{
+            margin: 2rem;
+            .image{
+                border: rgb(151, 150, 150) solid;
+            }
+        }
+    }
+    
+    .container-section-1-clasesgrupales{
+        h1{
+        font-size: x-large;
+        border: gray solid;
+        background-color: $bg-color;
+        padding: 1rem;
+    
+    }
+    display: flex;
+    justify-content: end;
+    text-align: justify;
+    margin: 1rem;
+    
+    }
+}
