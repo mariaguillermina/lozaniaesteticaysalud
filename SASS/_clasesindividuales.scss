@@ -1,0 +1,169 @@
+
+
+/*------------------------------STYLE BG BANNER-----------------------------------------------*/
+
+.container-header-clasesindividuales{
+    background-image: url("./img/bg-claseindividual.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20rem;
+}
+
+/* ---------------------------------------- style Main----------------------------------------*/
+.container-section-2-clasesindividuales{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+    .container-image-1, .container-image-2{
+        margin: 2rem;
+        .image{
+            border: rgb(151, 150, 150) solid;
+        }
+    }
+}
+
+.container-section-1-clasesindividuales{
+    h1{
+    font-size: x-large;
+    border: gray solid;
+    background-color: $bg-color;
+    padding: 1rem;
+
+}
+display: flex;
+justify-content: end;
+text-align: justify;
+margin: 1rem;
+
+}
+
+/*---------------------------------------STYLE BOTON--------------------------------------*/
+
+.container-button-clasesindividuales{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    .boton-clasesindividuales{
+        background-color: rgb(195, 230, 212);
+        border-radius: 1rem;
+        border-color: grey;
+    }
+    
+    .btn-clasesindividuales{
+        color: $font-color;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+}
+
+/*---------------------------------RESPONSIVE---------------------------------------------------*/
+
+/*------------MOBILE---------------------*/
+
+@media (min-width: 360px){
+    .container-header-clasesindividuales{
+        background-image: url("./img/bg-claseindivudal-mobile.jpg");
+        justify-content: center;
+        background-repeat:no-repeat;
+        background-position: center;
+        
+        
+
+    }
+    .container-section-2-clasesindividuales{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 1rem;
+        padding: 1rem;
+        .container-image-1, .container-image-2{
+            margin: 2rem;
+            .image{
+                border: rgb(151, 150, 150) solid;
+                height: 20rem;
+                width: 20rem;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 576px){
+    .container-header-clasesindividuales{
+        background-image: url("./img/bg-claseindivudal-mobile.jpg");
+        justify-content: center;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .container-section-2-clasesindividuales{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 1rem;
+        padding: 1rem;
+        .container-image-1, .container-image-2{
+            margin: 2rem;
+            .image{
+                border: rgb(151, 150, 150) solid;
+                height: 20rem;
+                width: 20rem;
+            }
+        }
+    }
+}
+
+/*-----------TABLET---------------------*/
+@media (min-width: 768px){
+    .container-header-clasesindividuales{
+        background-image: url("./img/bg-claseindividual.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+/*-----------DESKTOP--------------------*/
+
+@media (min-width: 992px){
+    .container-header-clasesindividuales{
+        background-image: url("./img/bg-claseindividual.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 28rem;
+    
+    }
+
+    .container-section-2-clasesindividuales{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+        padding: 1rem;
+        .container-image-1, .container-image-2{
+            margin: 2rem;
+            .image{
+                border: rgb(151, 150, 150) solid;
+            }
+        }
+    }
+    
+    .container-section-1-clasesindividuales{
+        h1{
+        font-size: x-large;
+        border: gray solid;
+        background-color: $bg-color;
+        padding: 1rem;
+    
+    }
+    display: flex;
+    justify-content: end;
+    text-align: justify;
+    margin: 1rem;
+    
+    }
+}

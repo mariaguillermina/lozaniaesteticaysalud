@@ -2323,4 +2323,412 @@ h2 {
     padding: 1rem;
   }
 }
+
+/*------------------------------STYLE BG BANNER-----------------------------------------------*/
+.container-header-pilatesterapia {
+  background-image: url("./img/bg-pilates-terapeutico.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20rem;
+}
+
+/* ---------------------------------------- style Main----------------------------------------*/
+.container-section-2-pilatesterapia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.container-section-2-pilatesterapia .container-image-1, .container-section-2-pilatesterapia .container-image-2 {
+  margin: 2rem;
+}
+
+.container-section-2-pilatesterapia .container-image-1 .image, .container-section-2-pilatesterapia .container-image-2 .image {
+  border: #979696 solid;
+}
+
+.container-section-1-pilatesterapia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  text-align: justify;
+  margin: 1rem;
+}
+
+.container-section-1-pilatesterapia h1 {
+  font-size: x-large;
+  border: gray solid;
+  background-color: #aaf1f3;
+  padding: 1rem;
+}
+
+/*---------------------------------------STYLE BOTON--------------------------------------*/
+.container-button-pilatesterapia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2rem;
+}
+
+.container-button-pilatesterapia .boton-pilatesterapia {
+  background-color: #c3e6d4;
+  border-radius: 1rem;
+  border-color: grey;
+}
+
+.container-button-pilatesterapia .btn-pilatesterapia {
+  color: #3a3939;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/*---------------------------------RESPONSIVE---------------------------------------------------*/
+/*------------MOBILE---------------------*/
+@media (min-width: 360px) {
+  .container-header-pilatesterapia {
+    background-image: url("./img/bg-pilates-terapeutico-mobile.jpg");
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .container-section-2-pilatesterapia {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .container-section-2-pilatesterapia .container-image-1, .container-section-2-pilatesterapia .container-image-2 {
+    margin: 2rem;
+  }
+  .container-section-2-pilatesterapia .container-image-1 .image, .container-section-2-pilatesterapia .container-image-2 .image {
+    border: #979696 solid;
+    height: 20rem;
+    width: 20rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .container-header-pilatesterapia {
+    background-image: url("./img/bg-pilates-terapeutico-mobile.jpg");
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .container-section-2-pilatesterapia {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .container-section-2-pilatesterapia .container-image-1, .container-section-2-pilatesterapia .container-image-2 {
+    margin: 2rem;
+  }
+  .container-section-2-pilatesterapia .container-image-1 .image, .container-section-2-pilatesterapia .container-image-2 .image {
+    border: #979696 solid;
+    height: 20rem;
+    width: 20rem;
+  }
+}
+
+/*-----------TABLET---------------------*/
+@media (min-width: 768px) {
+  .container-header-pilatesterapia {
+    background-image: url("./img/bg-pilates-terapeutico.jpg");
+    background-repeat: no-repeat;
+    background-position: inherit;
+  }
+}
+
+/*-----------DESKTOP--------------------*/
+@media (min-width: 992px) {
+  .container-header-pilatesterapia {
+    background-image: url("./img/bg-pilates-terapeutico.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 28rem;
+  }
+  .container-section-2-pilatesterapia {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .container-section-2-pilatesterapia .container-image-1, .container-section-2-pilatesterapia .container-image-2 {
+    margin: 2rem;
+  }
+  .container-section-2-pilatesterapia .container-image-1 .image, .container-section-2-pilatesterapia .container-image-2 .image {
+    border: #979696 solid;
+  }
+  .container-section-1-pilatesterapia {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    text-align: justify;
+    margin: 1rem;
+  }
+  .container-section-1-pilatesterapia h1 {
+    font-size: x-large;
+    border: gray solid;
+    background-color: #aaf1f3;
+    padding: 1rem;
+  }
+}
+
+/*------------------------------STYLE BG BANNER-----------------------------------------------*/
+.container-header-clasesindividuales {
+  background-image: url("./img/bg-claseindividual.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20rem;
+}
+
+/* ---------------------------------------- style Main----------------------------------------*/
+.container-section-2-clasesindividuales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.container-section-2-clasesindividuales .container-image-1, .container-section-2-clasesindividuales .container-image-2 {
+  margin: 2rem;
+}
+
+.container-section-2-clasesindividuales .container-image-1 .image, .container-section-2-clasesindividuales .container-image-2 .image {
+  border: #979696 solid;
+}
+
+.container-section-1-clasesindividuales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  text-align: justify;
+  margin: 1rem;
+}
+
+.container-section-1-clasesindividuales h1 {
+  font-size: x-large;
+  border: gray solid;
+  background-color: #aaf1f3;
+  padding: 1rem;
+}
+
+/*---------------------------------------STYLE BOTON--------------------------------------*/
+.container-button-clasesindividuales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2rem;
+}
+
+.container-button-clasesindividuales .boton-clasesindividuales {
+  background-color: #c3e6d4;
+  border-radius: 1rem;
+  border-color: grey;
+}
+
+.container-button-clasesindividuales .btn-clasesindividuales {
+  color: #3a3939;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/*---------------------------------RESPONSIVE---------------------------------------------------*/
+/*------------MOBILE---------------------*/
+@media (min-width: 360px) {
+  .container-header-clasesindividuales {
+    background-image: url("./img/bg-claseindivudal-mobile.jpg");
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .container-section-2-clasesindividuales {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .container-section-2-clasesindividuales .container-image-1, .container-section-2-clasesindividuales .container-image-2 {
+    margin: 2rem;
+  }
+  .container-section-2-clasesindividuales .container-image-1 .image, .container-section-2-clasesindividuales .container-image-2 .image {
+    border: #979696 solid;
+    height: 20rem;
+    width: 20rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .container-header-clasesindividuales {
+    background-image: url("./img/bg-claseindivudal-mobile.jpg");
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .container-section-2-clasesindividuales {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .container-section-2-clasesindividuales .container-image-1, .container-section-2-clasesindividuales .container-image-2 {
+    margin: 2rem;
+  }
+  .container-section-2-clasesindividuales .container-image-1 .image, .container-section-2-clasesindividuales .container-image-2 .image {
+    border: #979696 solid;
+    height: 20rem;
+    width: 20rem;
+  }
+}
+
+/*-----------TABLET---------------------*/
+@media (min-width: 768px) {
+  .container-header-clasesindividuales {
+    background-image: url("./img/bg-claseindividual.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+/*-----------DESKTOP--------------------*/
+@media (min-width: 992px) {
+  .container-header-clasesindividuales {
+    background-image: url("./img/bg-claseindividual.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 28rem;
+  }
+  .container-section-2-clasesindividuales {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .container-section-2-clasesindividuales .container-image-1, .container-section-2-clasesindividuales .container-image-2 {
+    margin: 2rem;
+  }
+  .container-section-2-clasesindividuales .container-image-1 .image, .container-section-2-clasesindividuales .container-image-2 .image {
+    border: #979696 solid;
+  }
+  .container-section-1-clasesindividuales {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    text-align: justify;
+    margin: 1rem;
+  }
+  .container-section-1-clasesindividuales h1 {
+    font-size: x-large;
+    border: gray solid;
+    background-color: #aaf1f3;
+    padding: 1rem;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
