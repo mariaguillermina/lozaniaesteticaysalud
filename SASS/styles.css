@@ -1711,4 +1711,412 @@ h2 {
     padding: 1rem;
   }
 }
+
+/*------------------------------STYLE BG BANNER-----------------------------------------------*/
+.container-header-rehabilitacion {
+  background-image: url("./img/bg-rehabilitacion.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20rem;
+}
+
+/* ---------------------------------------- style Main----------------------------------------*/
+.container-section-2-rehabilitacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.container-section-2-rehabilitacion .container-image-1, .container-section-2-rehabilitacion .container-image-2 {
+  margin: 2rem;
+}
+
+.container-section-2-rehabilitacion .container-image-1 .image, .container-section-2-rehabilitacion .container-image-2 .image {
+  border: #979696 solid;
+}
+
+.container-section-1-rehabilitacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  text-align: justify;
+  margin: 1rem;
+}
+
+.container-section-1-rehabilitacion h1 {
+  font-size: x-large;
+  border: gray solid;
+  background-color: #aaf1f3;
+  padding: 1rem;
+}
+
+/*---------------------------------------STYLE BOTON--------------------------------------*/
+.container-button-rehabilitacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2rem;
+}
+
+.container-button-rehabilitacion .boton-rehabilitacion {
+  background-color: #c3e6d4;
+  border-radius: 1rem;
+  border-color: grey;
+}
+
+.container-button-rehabilitacion .btn-rehabilitacion {
+  color: #3a3939;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/*---------------------------------RESPONSIVE---------------------------------------------------*/
+/*------------MOBILE---------------------*/
+@media (min-width: 360px) {
+  .container-header-rehabilitacion {
+    background-image: url("./img/bg-rehabilitacion-mobile.jpeg");
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .container-section-2-rehabilitacion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .container-section-2-rehabilitacion .container-image-1, .container-section-2-rehabilitacion .container-image-2 {
+    margin: 2rem;
+  }
+  .container-section-2-rehabilitacion .container-image-1 .image, .container-section-2-rehabilitacion .container-image-2 .image {
+    border: #979696 solid;
+    height: 20rem;
+    width: 20rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .container-header-rehabilitacion {
+    background-image: url("./img/bg-rehabilitacion-mobile.jpeg");
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .container-section-2-rehabilitacion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .container-section-2-rehabilitacion .container-image-1, .container-section-2-rehabilitacion .container-image-2 {
+    margin: 2rem;
+  }
+  .container-section-2-rehabilitacion .container-image-1 .image, .container-section-2-rehabilitacion .container-image-2 .image {
+    border: #979696 solid;
+    height: 20rem;
+    width: 20rem;
+  }
+}
+
+/*-----------TABLET---------------------*/
+@media (min-width: 768px) {
+  .container-header-rehabilitacion {
+    background-image: url("./img/bg-rehabilitacion.jpg");
+    background-repeat: no-repeat;
+    background-position: inherit;
+  }
+}
+
+/*-----------DESKTOP--------------------*/
+@media (min-width: 992px) {
+  .container-header-rehabilitacion {
+    background-image: url("./img/bg-rehabilitacion.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: inherit;
+    height: 35rem;
+  }
+  .container-section-2-rehabilitacion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .container-section-2-rehabilitacion .container-image-1, .container-section-2-rehabilitacion .container-image-2 {
+    margin: 2rem;
+  }
+  .container-section-2-rehabilitacion .container-image-1 .image, .container-section-2-rehabilitacion .container-image-2 .image {
+    border: #979696 solid;
+  }
+  .container-section-1-rehabilitacion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    text-align: justify;
+    margin: 1rem;
+  }
+  .container-section-1-rehabilitacion h1 {
+    font-size: x-large;
+    border: gray solid;
+    background-color: #aaf1f3;
+    padding: 1rem;
+  }
+}
+
+/*------------------------------STYLE BG BANNER-----------------------------------------------*/
+.container-header-drenaje {
+  background-image: url("./img/bg-drenaje.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20rem;
+}
+
+/* ---------------------------------------- style Main----------------------------------------*/
+.container-section-2-drenaje {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.container-section-2-drenaje .container-image-1, .container-section-2-drenaje .container-image-2 {
+  margin: 2rem;
+}
+
+.container-section-2-drenaje .container-image-1 .image, .container-section-2-drenaje .container-image-2 .image {
+  border: #979696 solid;
+}
+
+.container-section-1-drenaje {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  text-align: justify;
+  margin: 1rem;
+}
+
+.container-section-1-drenaje h1 {
+  font-size: x-large;
+  border: gray solid;
+  background-color: #aaf1f3;
+  padding: 1rem;
+}
+
+/*---------------------------------------STYLE BOTON--------------------------------------*/
+.container-button-drenaje {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2rem;
+}
+
+.container-button-drenaje .boton-drenaje {
+  background-color: #c3e6d4;
+  border-radius: 1rem;
+  border-color: grey;
+}
+
+.container-button-drenaje .btn-drenaje {
+  color: #3a3939;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/*---------------------------------RESPONSIVE---------------------------------------------------*/
+/*------------MOBILE---------------------*/
+@media (min-width: 360px) {
+  .container-header-drenaje {
+    background-image: url("./img/bg-drenaje-mobile.jpg");
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .container-section-2-drenaje {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .container-section-2-drenaje .container-image-1, .container-section-2-drenaje .container-image-2 {
+    margin: 2rem;
+  }
+  .container-section-2-drenaje .container-image-1 .image, .container-section-2-drenaje .container-image-2 .image {
+    border: #979696 solid;
+    height: 20rem;
+    width: 20rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .container-header-drenaje {
+    background-image: url("./img/bg-drenaje-mobile.jpg");
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .container-section-2-drenaje {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .container-section-2-drenaje .container-image-1, .container-section-2-drenaje .container-image-2 {
+    margin: 2rem;
+  }
+  .container-section-2-drenaje .container-image-1 .image, .container-section-2-drenaje .container-image-2 .image {
+    border: #979696 solid;
+    height: 20rem;
+    width: 20rem;
+  }
+}
+
+/*-----------TABLET---------------------*/
+@media (min-width: 768px) {
+  .container-header-drenaje {
+    background-image: url("./img/bg-drenaje.jpg");
+    background-repeat: no-repeat;
+    background-position: inherit;
+  }
+}
+
+/*-----------DESKTOP--------------------*/
+@media (min-width: 992px) {
+  .container-header-drenaje {
+    background-image: url("./img/bg-drenaje.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: inherit;
+    height: 28rem;
+  }
+  .container-section-2-drenaje {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .container-section-2-drenaje .container-image-1, .container-section-2-drenaje .container-image-2 {
+    margin: 2rem;
+  }
+  .container-section-2-drenaje .container-image-1 .image, .container-section-2-drenaje .container-image-2 .image {
+    border: #979696 solid;
+  }
+  .container-section-1-drenaje {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    text-align: justify;
+    margin: 1rem;
+  }
+  .container-section-1-drenaje h1 {
+    font-size: x-large;
+    border: gray solid;
+    background-color: #aaf1f3;
+    padding: 1rem;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
