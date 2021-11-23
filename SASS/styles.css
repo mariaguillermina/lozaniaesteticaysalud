@@ -1452,7 +1452,7 @@ h2 {
 /*-----------TABLET---------------------*/
 @media (min-width: 768px) {
   .container-header-dolor {
-    background-image: url("./img/bg-dolor.jpg.crdownload");
+    background-image: url("./img/bg-dolor.jpg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -1461,7 +1461,7 @@ h2 {
 /*-----------DESKTOP--------------------*/
 @media (min-width: 992px) {
   .container-header-dolor {
-    background-image: url("./img/bg-dolor.jpg.crdownload");
+    background-image: url("./img/bg-dolor.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
