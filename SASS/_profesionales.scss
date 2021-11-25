@@ -1,0 +1,122 @@
+
+/*------------------------------------------GRID----------------------------------------------------------------*/
+#grilla{
+    display: grid;
+    grid-template-areas: 
+    "titulo-principal titulo-principal titulo-principal"
+    "info info info"
+    "profesionales profesionales profesionales";
+    grid-template-rows:34% 34% 33%;
+    grid-template-columns: 50% 50%;
+}
+
+.titulo-principal{
+    grid-area: titulo-principal;
+}
+
+
+.info{
+    grid-area: info;
+}
+.footer-profesionales{
+    grid-area: profesionales;
+}
+/*----------------------------------------------------TITULO--------------------------------------------------------------*/
+.titulo-principal{
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+    background-color:$bg-color;
+}
+
+/*----------------------------------------- Carrousel---------------------------------------------------------------------*/
+
+
+.carrousel-profesionales{
+    height: 20rem;
+    width: 25rem;
+    margin: 1rem;
+    align-items: center;
+    .carousel-inner{
+        border-radius: 1rem;
+    }
+}
+
+/*---------------------------------INFO---------------------------------------------------------------------------------*/
+
+.info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: justify;
+    font-size: large;
+    margin: 1rem;
+    padding: 2rem;
+     ul{
+        li{
+            list-style: none;
+        }
+        i{
+            color: $font-color;
+            
+        }
+    }
+    }
+
+/*-----------------------------------------FOOTER----------------------------------------------------------------------*/
+
+.container-profesionales{
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+    padding: 2rem;
+
+    }
+    .container-fundadora{
+        justify-content: center;
+        text-align: justify;
+        padding: 1rem;
+    }
+     img{
+        border-radius: 1rem;
+    }
+    ul{
+        li{
+            font-size: larger;
+            line-height: 3rem;
+            text-align: justify;
+        }
+        .fas{
+            margin: 1rem;
+            transform: scale(1.2);
+        }
+    }    
+
+
+.container-titulo{
+    align-items: center;
+    border-radius: 2rem;
+    background-color: $bg-color;
+    height: 5rem;
+    width: 7rem;
+}
+
+/*------------------------------------------TRNASFORMACIONES------------------------------------------------------------------------------------*/
+.container-titulo:hover{
+    transform: scale(1.2);
+
+}
+.container-fundadora i:hover{
+    transform: skew(26deg);
+}
+    
+
+
+    
+
+
+
+
+
+
+

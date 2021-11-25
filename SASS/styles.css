@@ -2935,4 +2935,142 @@ h2 {
     padding: 1rem;
   }
 }
+
+/*------------------------------------------GRID----------------------------------------------------------------*/
+#grilla {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "titulo-principal titulo-principal titulo-principal" "info info info" "profesionales profesionales profesionales";
+  -ms-grid-rows: 34% 34% 33%;
+      grid-template-rows: 34% 34% 33%;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+.titulo-principal {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: titulo-principal;
+}
+
+.info {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: info;
+}
+
+.footer-profesionales {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: profesionales;
+}
+
+/*----------------------------------------------------TITULO--------------------------------------------------------------*/
+.titulo-principal {
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #aaf1f3;
+}
+
+/*----------------------------------------- Carrousel---------------------------------------------------------------------*/
+.carrousel-profesionales {
+  height: 20rem;
+  width: 25rem;
+  margin: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carrousel-profesionales .carousel-inner {
+  border-radius: 1rem;
+}
+
+/*---------------------------------INFO---------------------------------------------------------------------------------*/
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: justify;
+  font-size: large;
+  margin: 1rem;
+  padding: 2rem;
+}
+
+.info ul li {
+  list-style: none;
+}
+
+.info ul i {
+  color: #3a3939;
+}
+
+/*-----------------------------------------FOOTER----------------------------------------------------------------------*/
+.container-profesionales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 1rem;
+  padding: 2rem;
+}
+
+.container-fundadora {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: justify;
+  padding: 1rem;
+}
+
+img {
+  border-radius: 1rem;
+}
+
+ul li {
+  font-size: larger;
+  line-height: 3rem;
+  text-align: justify;
+}
+
+ul .fas {
+  margin: 1rem;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.container-titulo {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 2rem;
+  background-color: #aaf1f3;
+  height: 5rem;
+  width: 7rem;
+}
+
+/*------------------------------------------TRNASFORMACIONES------------------------------------------------------------------------------------*/
+.container-titulo:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.container-fundadora i:hover {
+  -webkit-transform: skew(26deg);
+          transform: skew(26deg);
+}
 /*# sourceMappingURL=styles.css.map */
