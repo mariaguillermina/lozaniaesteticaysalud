@@ -2945,6 +2945,7 @@ h2 {
       grid-template-rows: 34% 34% 33%;
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
+  grid-column-gap: 1rem;
 }
 
 .titulo-principal {
@@ -3238,6 +3239,7 @@ ul .fas {
   }
   .info .image-prof {
     border-radius: 1rem;
+    margin: 1rem;
   }
   .info ul li {
     font-size: larger;
@@ -3270,6 +3272,7 @@ ul .fas {
         grid-template-rows: 34% 34% 33%;
     -ms-grid-columns: 50% 50%;
         grid-template-columns: 50% 50%;
+    grid-column-gap: 1rem;
   }
   .titulo-principal {
     -ms-grid-row: 1;
@@ -3319,7 +3322,6 @@ ul .fas {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    margin: 1rem;
     padding: 2rem;
   }
   .info .container-fundadora {
@@ -3331,6 +3333,7 @@ ul .fas {
   }
   .info .image-prof {
     border-radius: 1rem;
+    margin: 2rem;
   }
   .info ul li {
     font-size: larger;
@@ -3346,6 +3349,7 @@ ul .fas {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    text-align: center;
     border-radius: 2rem;
     background-color: #aaf1f3;
     height: 5rem;
