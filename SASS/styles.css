@@ -2940,7 +2940,7 @@ h2 {
 #grilla {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "titulo-principal titulo-principal titulo-principal" "info info info" "profesionales profesionales profesionales";
+      grid-template-areas: "titulo-principal titulo-principal titulo-principal" "info info info" "profesionales profesionales profesionales";
   -ms-grid-rows: 34% 34% 33%;
       grid-template-rows: 34% 34% 33%;
   -ms-grid-columns: 50% 50%;
@@ -3037,7 +3037,7 @@ h2 {
   padding: 1rem;
 }
 
-img {
+.image-prof {
   border-radius: 1rem;
 }
 
@@ -3063,7 +3063,7 @@ ul .fas {
   width: 7rem;
 }
 
-/*------------------------------------------TRNASFORMACIONES------------------------------------------------------------------------------------*/
+/*------------------------------------------TRANSFORMACIONES------------------------------------------------------------------------------------*/
 .container-titulo:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
@@ -3072,5 +3072,296 @@ ul .fas {
 .container-fundadora i:hover {
   -webkit-transform: skew(26deg);
           transform: skew(26deg);
+}
+
+/*---------------------------------------------RESPONSIVE-----------------------------------------------------------------------------------*/
+/*--------------------------------------------MOBILE --------------------------*/
+@media (min-width: 360px) {
+  .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: justify;
+    font-size: large;
+    margin: 1rem;
+    padding: 2rem;
+  }
+  .info ul li {
+    list-style: none;
+  }
+  .info ul i {
+    color: #3a3939;
+  }
+  .container-profesionales {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 1rem;
+    padding: 2rem;
+  }
+  .container-fundadora {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: justify;
+    padding: 1rem;
+  }
+  .image-prof {
+    border-radius: 1rem;
+  }
+  ul li {
+    font-size: larger;
+    line-height: 3rem;
+    text-align: justify;
+  }
+  ul .fas {
+    margin: 1rem;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .container-titulo {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 2rem;
+    background-color: #aaf1f3;
+    height: 5rem;
+    width: 7rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: justify;
+    font-size: large;
+    margin: 1rem;
+    padding: 2rem;
+  }
+  .info ul li {
+    list-style: none;
+  }
+  .info ul i {
+    color: #3a3939;
+  }
+  .container-profesionales {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 1rem;
+    padding: 2rem;
+  }
+  .container-fundadora {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: justify;
+    padding: 1rem;
+  }
+  .image-prof {
+    border-radius: 1rem;
+  }
+  ul li {
+    font-size: larger;
+    line-height: 3rem;
+    text-align: justify;
+  }
+  ul .fas {
+    margin: 1rem;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .container-titulo {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 2rem;
+    background-color: #aaf1f3;
+    height: 5rem;
+    width: 7rem;
+  }
+}
+
+/*--------------------------------------------TABLET-----------------------------------*/
+@media (min-width: 768px) {
+  .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: justify;
+    font-size: large;
+    margin: 1rem;
+    padding: 2rem;
+  }
+  .info ul li {
+    list-style: none;
+  }
+  .info ul i {
+    color: #3a3939;
+  }
+  .info .container-profesionales {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 1rem;
+    padding: 2rem;
+  }
+  .info .container-fundadora {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: justify;
+    padding: 1rem;
+  }
+  .info .image-prof {
+    border-radius: 1rem;
+  }
+  .info ul li {
+    font-size: larger;
+    line-height: 3rem;
+    text-align: justify;
+  }
+  .info ul .fas {
+    margin: 1rem;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .info .container-titulo {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 2rem;
+    background-color: #aaf1f3;
+    height: 5rem;
+    width: 7rem;
+  }
+}
+
+/*--------------------------------------DESKTOP-----------------------------------------*/
+@media (min-width: 992px) {
+  #grilla {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "titulo-principal titulo-principal titulo-principal" "info info info" "profesionales profesionales profesionales";
+    -ms-grid-rows: 34% 34% 33%;
+        grid-template-rows: 34% 34% 33%;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+  .titulo-principal {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: titulo-principal;
+  }
+  .info {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: info;
+  }
+  .footer-profesionales {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: profesionales;
+  }
+  .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: justify;
+    font-size: large;
+    margin: 1rem;
+    padding: 2rem;
+  }
+  .info ul li {
+    list-style: none;
+  }
+  .info ul i {
+    color: #3a3939;
+  }
+  .info .container-profesionales {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 1rem;
+    padding: 2rem;
+  }
+  .info .container-fundadora {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: justify;
+    padding: 1rem;
+  }
+  .info .image-prof {
+    border-radius: 1rem;
+  }
+  .info ul li {
+    font-size: larger;
+    line-height: 3rem;
+    text-align: justify;
+  }
+  .info ul .fas {
+    margin: 1rem;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .info .container-titulo {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 2rem;
+    background-color: #aaf1f3;
+    height: 5rem;
+    width: 7rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

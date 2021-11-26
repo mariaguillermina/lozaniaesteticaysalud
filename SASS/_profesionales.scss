@@ -77,7 +77,7 @@
         text-align: justify;
         padding: 1rem;
     }
-     img{
+     .image-prof{
         border-radius: 1rem;
     }
     ul{
@@ -101,7 +101,7 @@
     width: 7rem;
 }
 
-/*------------------------------------------TRNASFORMACIONES------------------------------------------------------------------------------------*/
+/*------------------------------------------TRANSFORMACIONES------------------------------------------------------------------------------------*/
 .container-titulo:hover{
     transform: scale(1.2);
 
@@ -109,14 +109,261 @@
 .container-fundadora i:hover{
     transform: skew(26deg);
 }
+ 
+/*---------------------------------------------RESPONSIVE-----------------------------------------------------------------------------------*/
+
+/*--------------------------------------------MOBILE --------------------------*/
+
+
+@media (min-width: 360px){
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    font-size: large;
+    margin: 1rem;
+    padding: 2rem;
+     ul{
+        li{
+            list-style: none;
+        }
+        i{
+            color: $font-color;
+            
+        }
+    }
+}
+.container-profesionales{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 2rem;
+
+    }
+    .container-fundadora{
+        justify-content: center;
+        text-align: justify;
+        padding: 1rem;
+    }
+     .image-prof{
+        border-radius: 1rem;
+    }
+    ul{
+        li{
+            font-size: larger;
+            line-height: 3rem;
+            text-align: justify;
+        }
+        .fas{
+            margin: 1rem;
+            transform: scale(1.2);
+        }
+    }    
+
+
+.container-titulo{
+    align-items: center;
+    border-radius: 2rem;
+    background-color: $bg-color;
+    height: 5rem;
+    width: 7rem;
+}
+}
     
-
-
+@media (min-width: 576px){
+    .info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+        font-size: large;
+        margin: 1rem;
+        padding: 2rem;
+         ul{
+            li{
+                list-style: none;
+            }
+            i{
+                color: $font-color;
+                
+            }
+        }
+    }
+    .container-profesionales{
+        display: flex;
+        flex-direction: row;
+        margin: 1rem;
+        padding: 2rem;
     
+        }
+        .container-fundadora{
+            justify-content: center;
+            text-align: justify;
+            padding: 1rem;
+        }
+         .image-prof{
+            border-radius: 1rem;
+        }
+        ul{
+            li{
+                font-size: larger;
+                line-height: 3rem;
+                text-align: justify;
+            }
+            .fas{
+                margin: 1rem;
+                transform: scale(1.2);
+            }
+        }    
+    
+    
+    .container-titulo{
+        align-items: center;
+        border-radius: 2rem;
+        background-color: $bg-color;
+        height: 5rem;
+        width: 7rem;
+    }
+    
+    
+}
+
+/*--------------------------------------------TABLET-----------------------------------*/
+@media (min-width: 768px){
+
+    .info{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: justify;
+        font-size: large;
+        margin: 1rem;
+        padding: 2rem;
+         ul{
+            li{
+                list-style: none;
+            }
+            i{
+                color: $font-color;
+                
+            }
+        }
+        .container-profesionales{
+            display: flex;
+            flex-direction: row;
+            margin: 1rem;
+            padding: 2rem;
+        
+            }
+            .container-fundadora{
+                justify-content: center;
+                text-align: justify;
+                padding: 1rem;
+            }
+             .image-prof{
+                border-radius: 1rem;
+            }
+            ul{
+                li{
+                    font-size: larger;
+                    line-height: 3rem;
+                    text-align: justify;
+                }
+                .fas{
+                    margin: 1rem;
+                    transform: scale(1.2);
+                }
+            }    
+        
+        
+        .container-titulo{
+            align-items: center;
+            border-radius: 2rem;
+            background-color: $bg-color;
+            height: 5rem;
+            width: 7rem;
+        }  
+    }
+}
+
+/*--------------------------------------DESKTOP-----------------------------------------*/
+
+@media (min-width: 992px){
+    #grilla{
+        display: grid;
+        grid-template-areas: 
+        "titulo-principal titulo-principal titulo-principal"
+        "info info info"
+        "profesionales profesionales profesionales";
+        grid-template-rows:34% 34% 33%;
+        grid-template-columns: 50% 50%;
+    }
+    
+    .titulo-principal{
+        grid-area: titulo-principal;
+    }
+    
+    
+    .info{
+        grid-area: info;
+    }
+    .footer-profesionales{
+        grid-area: profesionales;
+    }
 
 
-
-
-
-
-
+    .info{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: justify;
+        font-size: large;
+        margin: 1rem;
+        padding: 2rem;
+         ul{
+            li{
+                list-style: none;
+            }
+            i{
+                color: $font-color;
+                
+            }
+        }
+        .container-profesionales{
+            display: flex;
+            flex-direction: row;
+            margin: 1rem;
+            padding: 2rem;
+        
+            }
+            .container-fundadora{
+                justify-content: center;
+                text-align: justify;
+                padding: 1rem;
+            }
+             .image-prof{
+                border-radius: 1rem;
+            }
+            ul{
+                li{
+                    font-size: larger;
+                    line-height: 3rem;
+                    text-align: justify;
+                }
+                .fas{
+                    margin: 1rem;
+                    transform: scale(1.2);
+                }
+            }    
+        
+        
+        .container-titulo{
+            align-items: center;
+            border-radius: 2rem;
+            background-color: $bg-color;
+            height: 5rem;
+            width: 7rem;
+        }  
+    }
+}
