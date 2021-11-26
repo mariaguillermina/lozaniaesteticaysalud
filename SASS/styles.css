@@ -3049,11 +3049,9 @@ ul li {
 
 ul .fas {
   margin: 1rem;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
 }
 
-.container-titulo {
+.container-title {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -3064,7 +3062,7 @@ ul .fas {
 }
 
 /*------------------------------------------TRANSFORMACIONES------------------------------------------------------------------------------------*/
-.container-titulo:hover {
+.container-title:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
@@ -3125,12 +3123,7 @@ ul .fas {
     line-height: 3rem;
     text-align: justify;
   }
-  ul .fas {
-    margin: 1rem;
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  .container-titulo {
+  .container-title {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -3190,12 +3183,7 @@ ul .fas {
     line-height: 3rem;
     text-align: justify;
   }
-  ul .fas {
-    margin: 1rem;
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  .container-titulo {
+  ul .container-title {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -3261,7 +3249,7 @@ ul .fas {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
   }
-  .info .container-titulo {
+  .info .container-title {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -3354,7 +3342,7 @@ ul .fas {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
   }
-  .info .container-titulo {
+  .info .container-title {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;

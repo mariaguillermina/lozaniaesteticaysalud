@@ -88,12 +88,12 @@
         }
         .fas{
             margin: 1rem;
-            transform: scale(1.2);
+                     
         }
     }    
 
 
-.container-titulo{
+.container-title{
     align-items: center;
     border-radius: 2rem;
     background-color: $bg-color;
@@ -102,7 +102,7 @@
 }
 
 /*------------------------------------------TRANSFORMACIONES------------------------------------------------------------------------------------*/
-.container-titulo:hover{
+.container-title:hover{
     transform: scale(1.2);
 
 }
@@ -155,14 +155,10 @@
             line-height: 3rem;
             text-align: justify;
         }
-        .fas{
-            margin: 1rem;
-            transform: scale(1.2);
-        }
     }    
 
 
-.container-titulo{
+.container-title{
     align-items: center;
     border-radius: 2rem;
     background-color: $bg-color;
@@ -186,8 +182,7 @@
             }
             i{
                 color: $font-color;
-                
-            }
+             }    
         }
     }
     .container-profesionales{
@@ -211,24 +206,16 @@
                 line-height: 3rem;
                 text-align: justify;
             }
-            .fas{
-                margin: 1rem;
-                transform: scale(1.2);
-            }
-        }    
     
-    
-    .container-titulo{
+    .container-title{
         align-items: center;
         border-radius: 2rem;
         background-color: $bg-color;
         height: 5rem;
         width: 7rem;
-    }
-    
-    
+    }    
 }
-
+}
 /*--------------------------------------------TABLET-----------------------------------*/
 @media (min-width: 768px){
 
@@ -277,7 +264,7 @@
             }    
         
         
-        .container-titulo{
+        .container-title{
             align-items: center;
             border-radius: 2rem;
             background-color: $bg-color;
@@ -358,7 +345,7 @@
             }    
         
         
-        .container-titulo{
+        .container-title{
             align-items: center;
             border-radius: 2rem;
             background-color: $bg-color;
