@@ -566,7 +566,7 @@ h2 {
 /*------------MOBILE---------------------*/
 @media (min-width: 360px) {
   .container-header-limpieza {
-    background-image: url("./img/limpieza facial card real.jpg");
+    background-image: url("./img/limpiezareal-mobile.jpg");
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -601,7 +601,7 @@ h2 {
 
 @media (min-width: 576px) {
   .container-header-limpieza {
-    background-image: url("./img/limpieza facial card real.jpg");
+    background-image: url("./img/limpiezareal-mobile.jpg");
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -637,7 +637,7 @@ h2 {
 /*-----------TABLET---------------------*/
 @media (min-width: 768px) {
   .container-header-limpieza {
-    background-image: url("./img/limpieza facial card real.jpg");
+    background-image: url("./img/limpiezacarrousel3.jpg");
     background-repeat: no-repeat;
     background-position: center;
   }
