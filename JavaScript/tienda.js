@@ -1,55 +1,64 @@
-
-//----------------Variables Globales--------------//
-
-let precioKits = 2000
-
-let precioProtector = 1000
-
-let usser = prompt('Ingrese su nombre de Usuario')
-
-let acceso = ""
-
-let password = prompt('Ingrese su clave')
-
-//----------------------Ejecución--------------------//
-
-if (usser == "guille" && password == "1234"){
-    acceso = true
-}else{
-    alert('Su usuario y contraseña no son correctos')
-}
-
-if (acceso == true){
-    alert('Bienvenido a Tienda Lozania')
-}else{
-    alert('Ingrese usuario y contraseña correctos para ingresar a Tienda Lozania')
-}
-
-//-------------Funciones--------------------------------//
-let entrada = prompt('Qué desea comprar?')
-
-while (entrada !== 'ESC'){
-
-    
-    switch (entrada){
-
-        case "limpieza":
-            alert('Son $2000')
-            break
-        case "vitamina":
-            alert('Son $2000')
-            break
-        case "acne":
-            alert("Son $2000")
-            break
-        case "protector":
-            alert('Son $1000') 
-            break
-        default:
-        alert('No seleccionó ninguno de los productos disponibles')
-        break     
-        
+class Carrito{
+    constructor (lista){
+        this.lista = lista;
+    }
+    listarItems(){
+        return this.lista;
     }
 
-    entrada = prompt('Qué desea comprar?')
 }
+
+// Declaración de Array//
+
+const arr1 = []
+
+//Objeto//
+
+class Producto{
+    constructor(id,nombre,precio,cantidad,stock = true){
+        this.id = id;
+        this.nombre = nombre;
+        this.precio = precio;
+        this.cantidad = cantidad;
+        this.stock = stock;
+
+    }
+    getNombre(){
+        return this.nombre;
+
+    }
+
+    getPrecio(){
+        return this.precio;
+    }
+    getCantidad(){
+        return this.cantidad;
+    }
+
+    getStock(){
+        return this.stock;
+    }
+
+    agotado(){
+        this.stock = false
+    }
+
+}
+
+
+//Lista de Productos//
+
+const producto1 = new Producto(1,'Kit Limpieza Facial',2500,1000,true);
+
+const producto2 = new Producto(2,'Kit Vitamina C',2500,800,true);
+
+const producto3 = new Producto(3,'Kit Anti Acné',2000,100,true);
+
+const producto4 = new Producto(4,'Protector Solar',1500,2000,true);
+
+
+//Carrito//
+
+const carrito = new Carrito([producto1,producto2,producto3,producto4])
+
+console.log( carrito.listarItems())
