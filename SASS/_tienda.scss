@@ -1,6 +1,25 @@
 
-.tienda-body{
+#container-productos{
     display: flex;
     flex-direction: row;
     justify-content: center;
+
+    .descripcion{
+        justify-content: center;
+        text-align: center;
+        background-color: rgb(189, 179, 179);    
+    }
+    img{
+        margin: 0.50rem;
+        padding: 0.50rem;
+        justify-items: center;
+
+    }
+}
+
+.button-productos{
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: rgb(202, 243, 202);
 }

@@ -3357,7 +3357,7 @@ ul .fas {
   }
 }
 
-.tienda-body {
+#container-productos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3368,5 +3368,28 @@ ul .fas {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+#container-productos .descripcion {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background-color: #bdb3b3;
+}
+
+#container-productos img {
+  margin: 0.50rem;
+  padding: 0.50rem;
+  justify-items: center;
+}
+
+.button-productos {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #caf3ca;
 }
 /*# sourceMappingURL=styles.css.map */
