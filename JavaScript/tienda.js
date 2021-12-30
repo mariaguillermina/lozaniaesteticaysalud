@@ -81,3 +81,11 @@ for (let producto of misProductos){
     contenedorProductos.appendChild(div);
 
 }
+
+localStorage.setItem('producto1', JSON.stringify(producto1)); 
+
+localStorage.setItem('producto2', JSON.stringify(producto2)); 
+
+localStorage.setItem('producto3', JSON.stringify(producto3));
+
+localStorage.setItem('producto4', JSON.stringify(producto4));
