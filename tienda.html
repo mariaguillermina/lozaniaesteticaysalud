@@ -14,20 +14,29 @@ KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 <link rel="stylesheet" href="./css/bootstrap.min.css">
 <link rel="stylesheet" href="./SASS/styles.css">
     <title>Tienda</title>
-</head>
-<body class="tienda-body">
+  </head>
 
-  <div id="container-productos">
-
-   
-  </div>
-      
-<script src="./JavaScript/tienda.js"></script>
-</body>
-<script src="./js/bootstrap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" 
-integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" 
-crossorigin="anonymous"></script>
-<script src="https://kit.fontawesome.com/fa2c8baa8d.js" 
-crossorigin="anonymous"></script>
-</html>
+  <body class="tienda-body">
+    <div class='header-tienda'>
+      <div id="cart"onclick="toggleCarrito()"> 
+        <img src="./img/shopping-cart-solid.svg" alt="shoping-cart" width="50" height="50"/>
+        <div id="total-items">
+          0
+        </div>
+      </div>
+    </div>  
+    <div id='container-tienda'>    
+      <div id="container-productos"></div>
+      <div id="container-carrito">
+        
+      </div>
+    </div>
+    <script src="./JavaScript/datos.js"></script>
+    <script src="./JavaScript/tienda.js"></script>
+  </body>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/fa2c8baa8d.js" crossorigin="anonymous"></script>
+  
+  </html>

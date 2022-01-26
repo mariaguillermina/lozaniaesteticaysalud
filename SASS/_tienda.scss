@@ -1,15 +1,16 @@
 
-#container-productos{
+#container-productos {
     display: flex;
     flex-direction: row;
     justify-content: center;
 
-    .descripcion{
+    .descripcion {
         justify-content: center;
         text-align: center;
-        background-color: rgb(189, 179, 179);    
+        background-color: rgb(189, 179, 179);
     }
-    img{
+
+    img {
         margin: 0.50rem;
         padding: 0.50rem;
         justify-items: center;
@@ -17,9 +18,85 @@
     }
 }
 
-.button-productos{
+.button-productos {
     align-items: center;
     padding: 1rem;
     margin: 1rem;
     background-color: rgb(202, 243, 202);
+}
+
+#container-tienda {
+    display: flex;
+  }
+  
+  #container-carrito {
+    height: 100%;
+    background-color: #FFF;
+    position: absolute;
+    right: 0;
+    width: 0px;
+    transition: width 1s;
+  }
+  
+  #container-carrito.carrito {
+    padding: 10px 20px;
+  }
+  
+  
+  #container-carrito.visible {
+    width: 300px;
+  }
+  
+  .producto-carrito {
+    text-align: center;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    padding: 3px 0;
+  }
+  
+  .info-producto {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .boton-eliminar {
+    background-color: red;
+    padding: 5px;
+    border-radius: 5px;
+    color: #FFF;
+  }
+  
+  .boton-eliminar:hover {
+    background-color: red;
+    color: #FFF;
+  }
+  
+  .boton-inc-dec{
+    background-color: #FFF;
+    padding: 5px;
+    border-radius: 3px;
+    color: #000;
+  }
+  
+  .header-tienda{
+    background-color: rgb(32, 124, 199);
+    color: #FFF;
+    text-align: right;
+    padding: 1rem;
+  }
+  
+  /*# sourceMappingURL=styles.css.map */
+
+#total-items{
+    background: red;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 45px;
+    right: 50px;
 }

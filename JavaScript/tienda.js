@@ -1,91 +1,131 @@
-class Carrito{
-    constructor (lista){
-        this.lista = lista;
+class Carrito {
+    constructor() {
+        this.lista = [];
+        localStorage.setItem('carrito', JSON.stringify(this.lista));
     }
-    listarItems(){
+
+    agregarItem(item) {
+        this.lista.push(item);
+        localStorage.setItem('carrito', JSON.stringify(this.lista));
+    };
+
+    incrementarCantidad(itemId) {
+        const item = this.lista.findIndex(itemCarrito => itemCarrito.id === itemId);
+        this.lista[item].cantidad += 1;
+        localStorage.setItem('carrito', JSON.stringify(this.lista));
+    };
+
+    decrementarCantidad(itemId) {
+        const item = this.lista.findIndex(itemCarrito => itemCarrito.id === itemId);
+        this.lista[item].cantidad -= 1;
+        if (this.lista[item].cantidad === 0) {
+            this.lista.splice(item, 1);
+        }
+        localStorage.setItem('carrito', JSON.stringify(this.lista));
+    };
+
+    eliminarItem(itemId) {
+        this.lista = this.lista.filter(item => item.id !== itemId);
+        localStorage.setItem('carrito', JSON.stringify(this.lista));
+    };
+
+    vaciarCarrito() {
+        this.lista = [];
+        localStorage.setItem('carrito', JSON.stringify(this.lista));
+    };
+
+    listarItems() {
         return this.lista;
-    }
-
+    };
 }
 
-// Declaración de Array//
+const carrito = new Carrito(productos);
 
-const misProductos = [];
+const agregarProducto = (id) => {
+    const producto = productos.find(producto => producto.id == id);
+    carrito.lista.find(producto => producto.id == id)
+        ? alert('El producto ya está en el carrito')
+        : carrito.agregarItem({ ...producto, cantidad: 1 });
+    llenarCarrito();
+};
 
-//Objeto//
+const sumarProducto = (id) => {
+    carrito.incrementarCantidad(id);
+    llenarCarrito();
+};
 
-class Producto{
-    constructor(id,nombre,precio,cantidad,descripcion,img,stock = true){
-        this.id = id;
-        this.nombre = nombre;
-        this.precio = precio;
-        this.cantidad = cantidad;
-        this.descripcion = descripcion;
-        this.img = img;
-        this.stock = stock;
+const restarProducto = (id) => {
+    carrito.decrementarCantidad(id);
+    llenarCarrito();
+};
 
+const mostrarProductos = () => {
+    const contenedorProductos = document.getElementById('container-productos');
+    for (const producto of productos) {
+        let div = document.createElement('div');
+        div.setAttribute('class', 'producto');
+        div.innerHTML = `
+                <img src="${producto.img}" alt="" width= "300">
+                <p type="texto" class="descripcion">${producto.descripcion}</p>
+                <button type="button" class="button-productos" id="productos${producto.id}" onClick="agregarProducto(${producto.id})">${producto.nombre}</button>
+        `;
+        contenedorProductos.appendChild(div);
     }
-    getNombre(){
-        return this.nombre;
+};
 
+const eliminarProducto = (id) => {
+    carrito.eliminarItem(id);
+    llenarCarrito();
+};
+
+const llenarCarrito = () => {
+    const productosCarrito = JSON.parse(localStorage.getItem('carrito'));
+    const total = productosCarrito.reduce((total, producto) => {
+        return total + (producto.precio * producto.cantidad);
+    }, 0);
+    const totalItems = productosCarrito.reduce((total, producto) => {
+        return total + producto.cantidad;
+    }, 0);
+
+    const contenedorCarrito = document.getElementById('container-carrito');
+
+    let htmlCarrrito = `
+        <div class="carrito">
+            <h2>Carrito</h2>
+    `;
+
+    for (const producto of productosCarrito) {
+        htmlCarrrito += `
+            <div class="producto-carrito">
+                <img src="${producto.img}" alt="" width= "100">
+                <div class='info-producto'>
+                    <p>${producto.nombre}</p>
+                    <p>${producto.cantidad} X ${producto.precio}</p>
+                </div>
+                <div class='controles'>
+                    <button type="button" onClick="eliminarProducto(${producto.id})" class='boton-eliminar'>
+                        Eliminar
+                    </button>
+                    <button type="button" class='boton-inc-dec' onclick='restarProducto(${producto.id})'>-</button>
+                        ${producto.cantidad}
+                    <button type="button" class='boton-inc-dec' onclick='sumarProducto(${producto.id})'>+</button>
+                </div>                            
+            </div>`;
     }
 
-    getPrecio(){
-        return this.precio;
+    htmlCarrrito += `<p>Total: ${total}</p></div>`;
+    contenedorCarrito.innerHTML = htmlCarrrito;
+    document.getElementById("total-items").innerHTML = totalItems;
+};
+
+const toggleCarrito = () => {
+    const contenedorCarrito = document.getElementById('container-carrito');
+    if (contenedorCarrito.classList.contains('visible')) {
+        contenedorCarrito.classList.remove('visible');
+    } else {
+        llenarCarrito();
+        contenedorCarrito.classList.add('visible');
     }
-    getCantidad(){
-        return this.cantidad;
-    }
+};
 
-    getStock(){
-        return this.stock;
-    }
-
-    agotado(){
-        this.stock = false
-    }
-
-}
-
-
-//Lista de Productos//
-
-const producto1 = new Producto(1,'Kit Limpieza Facial',2500,1000,'Incluye: Fórmula Limpieza, Plasma Infusion serum, Plasma Infusion crema, máscara de limpieza','./SASS/img/kit limpieza.jpg',true);
-
-const producto2 = new Producto(2,'Kit Vitamina C',2500,800,'Incluye: Racian C Serum, Radian C crema facial.','./SASS/img/kit radian c.jpg',true);
-
-const producto3 = new Producto(3,'Kit Anti Acné',2000,100,'Incluye: Intensive Clearser, Tratamiento Acne detox, Tratamiento puntual acné.','./SASS/img/acne kit.jpg',true);
-
-const producto4 = new Producto(4,'Protector Solar',1500,2000,'Inluye: 1 protector solar','./SASS/img/protector.jpg',true);
-
-
-//Carrito//
-
-const carrito = new Carrito([producto1,producto2,producto3,producto4])
-
-console.log( carrito.listarItems())
-
-misProductos.push(producto1,producto2,producto3,producto4)
-
-let contenedorProductos = document.getElementById('container-productos')
-
-for (let producto of misProductos){
-    let div = document.createElement('div');
-    div.setAttribute('class','producto');
-
-    div.innerHTML = `
-    <img src="${producto.img}" alt="" width= "300">
-    <p type="texto" class="descripcion">${producto.descripcion}</p>
-    <button type="button" class="button-productos" id="productos${producto.id}">${producto.nombre}</button>`;
-
-    contenedorProductos.appendChild(div);
-
-}
-
-localStorage.setItem('producto1', JSON.stringify(producto1)); 
-
-localStorage.setItem('producto2', JSON.stringify(producto2)); 
-
-localStorage.setItem('producto3', JSON.stringify(producto3));
-
-localStorage.setItem('producto4', JSON.stringify(producto4));
+mostrarProductos();
